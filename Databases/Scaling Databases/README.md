@@ -14,7 +14,7 @@ These techniques are applicable to most databases out there, relational and non-
 - When read:write = 90:10, you move reads to other database
 - So that the master db/node is free to handle write operations
 
-![Horizontal Scaling Illustration](../Images/Scaling%20Databases/scaling-databases-1.png)
+![Horizontal Scaling Illustration](../../Images/Scaling%20Databases/scaling-databases-1.png)
 
 It is important that, API Servers needs to be configured in a way that it should know which database it should connect to
 
@@ -49,4 +49,4 @@ Changes on one database (Master) needs to be sent to replica to maintain consist
 - _Note: Some databases has a proxy hat takes care of routing_
 - Each shard can have it’s own replica if needed
 
-![Horizontal Scaling [Sharding] Illustration](../Images/Scaling%20Databases/scaling-databases-2.png)
+![Horizontal Scaling [Sharding] Illustration](../../Images/Scaling%20Databases/scaling-databases-2.png)
