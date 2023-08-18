@@ -1,3 +1,5 @@
+# Populating the Cache
+
 ### Lazy Population (Popular)
 
 - First go to the cache if data exists, return the data

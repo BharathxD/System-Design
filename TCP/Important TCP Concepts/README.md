@@ -15,8 +15,6 @@
 
 ## HTTP (Hyper Text Transfer Protocol)
 
----
-
 HTTP is a format that client and server understands
 
 (You can also define your own format, and make your client send data in it, your server passes it and processes it)
@@ -33,8 +31,6 @@ HTTP 1.1 is most commonly used
 - An HTTP header called `**connection:keep-alive**`, make sure that connection stay established (As long as the server supports the header)
 
 ## Websockets
-
----
 
 Websockets meant to do **`bi-directional communication`**
 
