@@ -8,7 +8,7 @@
    3. Inconsistency (If you cache the data in one server, when the client hits the same api endpoint but in different server, then that server might have to make call to the database, as the cache is not centralised)
    4. Burden on actual server (Due to usage of main memory)
 2. Database views (**Materialised**)
-   1. Stale data (Although you can use triggers to update these [materialised views](https://www.notion.so/Brainstorming-on-caching-at-different-levels-9f5558df45b947ed99bbe69fa032c801?pvs=21))
+   1. Stale data (Although you can use triggers to update these [materialised views](https://docs.snowflake.com/en/user-guide/views-materialized))
 3. Browser (**Local Storage**)
 4. Personalised Recommendation, storing the recommendation data on the browser itself, and periodically fetch the recommendation from the server (To refresh the Data). eg: Storing 50 Recommendations, and when user is trying to view all the recommendation, we can simply display them some amount of the recommendation data we have (let’s say 10), that would provide **a smooth user experience**
 5. CDN (Caching the **response**). eg: Caching search results of popular terms
