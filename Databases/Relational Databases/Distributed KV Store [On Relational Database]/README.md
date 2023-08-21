@@ -68,3 +68,25 @@ Do hard delete when an expired key is fetched
 💡 This approach is used by Redis & the number (sample size) 20 comes from the **[Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)**
 
 </aside>
+
+### Minor Improvements
+
+---
+
+**Implementing Delete**
+
+```sql
+UDPATE store SET ttl = -1 WHERE key = k1 AND ttl > NOW()
+```
+
+**Implementing Batch cleanup delete**
+
+```sql
+DELETE FROM store WHERE ttl <= NOW()
+```
+
+**Implementing GET**
+
+```sql
+SELECT * FROM store WHERE key = k1 AND ttl > NOW()
+```
