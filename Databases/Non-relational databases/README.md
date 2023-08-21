@@ -45,3 +45,22 @@ SELECT avg(price) WHERE ts='____'
 - Great for modelling `social behaviours`, `recommendations`
 - Solid use cases are: Fraud Detection
 - EG: Neo4J, Neptune, DGraph, TigerGraph
+
+## Why non-relational Databases scale
+
+- There are no relations
+- Data can be denormalised
+- Data is modelled to be sharded
+  - We can also achieve this on SQL Databases
+    - So, saying SQL does not scale is not correct
+
+| So, when to use SQL?   | When to use NoSQL?       |
+| ---------------------- | ------------------------ |
+| ACID                   | No Relations             |
+| Relations, Constraints | Data can be denormalised |
+| Fixed Schema           | Data can be sharded      |
+
+<aside>
+💡 MongoDB Supports ACID, but the official documentation says that use ACID `Sparingly`, ACID within a Shard is OK, but Cross Shard queries with ACID within in a Distributed Transaction is not recommended, you will lose out of throughput
+
+</aside>
