@@ -90,3 +90,21 @@ DELETE FROM store WHERE ttl <= NOW()
 ```sql
 SELECT * FROM store WHERE key = k1 AND ttl > NOW()
 ```
+
+### High Level Architecture
+
+---
+
+![HLA Arch 1 Demonstration](../../Images/Distributed%20KV/hla-1.png)
+
+Read from read replicas (If staleness is not a problem)
+
+Or read from Master Node for Strong Consistency
+
+### Scale Master node
+
+---
+
+![HLA Arch 2 Demonstration](../../Images/Distributed%20KV/hla-2.png)
+
+Each master node owns an exclusive fragment of the data
