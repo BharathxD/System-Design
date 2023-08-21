@@ -1,42 +1,47 @@
-# Non-relational databases
+# Non-relational Databases
 
-<aside>
-💡 Most Non-relational databases shard horizontally out-of-the-box
-</aside>
+Data in non-relational-ly structured
 
-## Three most important Non-relational databases
+- In most cases, NoSQL databases provide scalability and availability by compromising consistency (IN MOST CASES, NOT ALWAYS)
+- Non-relational database shard horizontally out-of-the-box
+
+Most NoSQL Databases are eventually consistent
+
+## Types of NoSQL Databases
 
 ### **DocumentDB**
 
-- These are closest to relational databases, mostly JSON based
-- Supports complex queries (Almost like relational SQL databases)
-- MongoDB and Elasticsearch (Although it’s use case is different, but can be used as nosql database) are two popular examples
-- Partial updates to the document are possible
-  ```json
-  {
-    "user_id": "1iondf937lihe907sv",
-    "total_posts": 270
-  }
-  ```
+- Mostly JOSN based
+- Supports complex queries
+- Partial Updates to Documents possible
+- Closest to Relational Database
+- EG: MongoDB, Elasticsearch
 
-### **Key Value Stores**
+### Key Value Store
 
-- These are extremely **simple databases**
-- Limited functionalities (GET(K), POST(K, V), DEL(K))
-  - K - Key
-  - V - Value
-- Meant for key-based access patterns
-- Do not support complex queries (like aggregations, as compared to DocumentDBs or Relational Databases)
-- Can be heavily sharded and partitioned
-- You can use relational databases and document db as **KV Stores**
-- Use Cases are: profile data, order data, auth data
-- Examples: Redis, DynamoDB and Aerospike
+- Key-wise access pattern
+- Heavily Partitioned
+- No Complex Queries Supported
+- EG: Redis, DynamoDB, Aerospike
 
-### **Graph Databases**
+### Column Oriented Databases
 
-- What if our graph datastructure had a database?
-- It stores the data that are represented as nodes, edges and relations
-- Example: Neptune, DGraph, Neo4J
-- Eg: A -*follows*→ B (or) Bharath -_bought→_ Macbook
-- Great for running complex graph algorithms
-- Powerful to model social networks, recommendations & fraud detection
+- Column oriented databases will read columns that are part of the query and will not even skim others
+- EG: In a row-oriented databases, per say if we want to filter out the data that is related to only one column, the database have to read entire row even though it is not necessary in our case: but the column oriented databases will read and filter out only the particular column that the user mentioned in the query
+
+```sql
+SELECT avg(price) WHERE ts='____'
+```
+
+- All you care is two columns `price` and `ts`, but a row DB will go row by row reading all columns & discarding 98% of them (Which is inefficient)
+- Is is a classic case of `Analytics Query`
+- Hence, column oriented DB are used in Massive Analytics & Warehouses. EG: Redshift
+- Foundational Paper on Column Oriented DB
+  - C-Store: A Column Oriented DBMS
+
+### Graph Databases
+
+- Stores data in nodes and edges
+- Great for modelling `social behaviours`, `recommendations`
+- Solid use cases are: Fraud Detection
+- EG: Neo4J, Neptune, DGraph, TigerGraph
