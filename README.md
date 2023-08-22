@@ -19,3 +19,5 @@ Feel free to browse through the different sections. I hope you find the informat
 - [Orchestrators](./Orchestrators)
 - [Load Balancers](./Load%20Balancers)
 - [Real World Systems](./Real%20World%20Systems)
+- [Big Data Processing](./Big%20Data%20Processing/)
+- [Communication](./Communication)
