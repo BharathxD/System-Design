@@ -29,3 +29,4 @@ Feel free to browse through the different sections. I hope you find the informat
 - [Consistent Hashing](./Consistent%20Hashing)
 - [Bloom Filter](./Bloom%20Filter)
 - [Message Streams](./Message%20Streams)
+- [Design Problems](./Design%20Problems)
