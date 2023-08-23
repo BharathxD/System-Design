@@ -30,3 +30,4 @@ Feel free to browse through the different sections. I hope you find the informat
 - [Bloom Filter](./Bloom%20Filter)
 - [Message Streams](./Message%20Streams)
 - [Design Problems](./Design%20Problems)
+  - [Thundering Herd Problem](./Design%20Problems/Thundering%20Herd%20Problem)
