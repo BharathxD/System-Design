@@ -22,3 +22,5 @@ Feel free to browse through the different sections. I hope you find the informat
 - [Big Data Processing](./Big%20Data%20Processing/)
 - [Communication](./Communication)
 - [Consistent Hashing](./Consistent%20Hashing)
+- [Bloom Filter](./Bloom%20Filter)
+
