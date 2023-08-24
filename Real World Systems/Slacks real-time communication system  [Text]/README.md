@@ -75,3 +75,9 @@ Hence, we need a fleet of servers (Edge Servers) to whom our end users connect o
 Don’t create multiple WebSocket connection, it could slow down the system
 
 </aside>
+
+### Overall Architecture
+
+---
+
+![Overall Architecture](../../Images/Slack’s%20real-time%20communication%20system%20[Text]/slack.png)
