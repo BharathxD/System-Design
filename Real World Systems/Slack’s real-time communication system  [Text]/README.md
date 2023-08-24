@@ -57,3 +57,9 @@
 💡 Always create a separate table just like `subscription`, you can also add fields like checkpoint, muted, read_till. Also make sure that it should be a `noun`
 
 </aside>
+
+### WebSockets
+
+---
+
+Every user will have 1 WebSocket connection open with our backend infrastructure and that will be used for anything and everything that happens `real-time`
