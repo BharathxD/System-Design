@@ -63,3 +63,9 @@
 ---
 
 Every user will have 1 WebSocket connection open with our backend infrastructure and that will be used for anything and everything that happens `real-time`
+
+**Edge Servers**
+
+Because WebSocket are `expensive` and browsers have a **6 Concurrent TCP** connection limit, we have to multiplex all realtime communication on `ONE WEBSOCKET` connection
+
+Hence, we need a fleet of servers (Edge Servers) to whom our end users connect over WebSocket [WS]
