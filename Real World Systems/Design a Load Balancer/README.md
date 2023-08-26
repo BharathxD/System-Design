@@ -56,3 +56,9 @@ The information about the backend server will be stored in the load balancer ser
 - To store the backend server details, a key-value store like Redis can be used
   - KVDB server is subscribed to Redis pub/sub, so that whenever the db is updated we can make LB Servers update their in-memory data about backed servers
 - Prometheus can be utilised to store meta information about the servers, allowing the autoscaling service to determine when scaling is necessary.
+
+### Orchestrator
+
+---
+
+The load balancer is prone to a single point of failure. To overcome this issue, we can use an orchestrator that regularly keeps track of the LB servers. If one server goes down, the orchestrator can deploy another LB. (The LB server should send frequent pulse requests to the orchestrator)
