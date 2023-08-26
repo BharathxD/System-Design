@@ -67,4 +67,4 @@ The load balancer is prone to a single point of failure. To overcome this issue,
 
 ---
 
-![Overall Architecture of LB](../../Images/Load%20Balancer/lb-lowlevel-arch.png)
+![Overall Architecture of LB](../../Images/Load%20Balancer/lb-overall-arch.png)
