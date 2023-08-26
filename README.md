@@ -21,6 +21,7 @@ Feel free to browse through the different sections. I hope you find the informat
   - [Isolation Levels](./Databases/Isolation%20Levels)
   - [Non-realational Databases](./Databases/Non-relational%20databases)
   - [Relational Databases](./Databases/Relational%20Databases)
+  - [Scaling Databases](./Databases/Scaling%20Databases/README.md)
   - [Sharding and Partitioning](./Databases/Sharding%20and%20Partitioning)
 - [Orchestrators](./Orchestrators)
 - [Distributed Systems](./Distributed%20Systems)
