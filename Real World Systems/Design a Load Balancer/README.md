@@ -13,4 +13,34 @@
   - Availability
   - Extensibility
 
-![LB Day Zero Architecture](../../Images/Load%20Balancer/lb-day0-arch.png)
+### Load Balancing Algorithms
+
+---
+
+**Round Robin [Uniform Infrastructure]**
+
+---
+
+- Distribute the load `Iteratively`
+- For Homogenous infrastructure, where every server has same hardware configuration [Hypothetically]
+
+**Weighted Round Robin [Non-uniform infrastructure]**
+
+---
+
+- Distribute the load iteratively but as per `weights`
+- Heterogenous Infrastructure
+
+**Least Connections**
+
+---
+
+Pick the server having the `least connections` from the load balancer
+
+**Hash Based Routing** (`Random`)
+
+---
+
+Hash of some attribute (ip, userId, url) determines which server to pick (You can configure `stickiness`)
+
+---
