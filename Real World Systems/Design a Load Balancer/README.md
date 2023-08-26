@@ -62,3 +62,9 @@ The information about the backend server will be stored in the load balancer ser
 ---
 
 The load balancer is prone to a single point of failure. To overcome this issue, we can use an orchestrator that regularly keeps track of the LB servers. If one server goes down, the orchestrator can deploy another LB. (The LB server should send frequent pulse requests to the orchestrator)
+
+### Overall Architecture
+
+---
+
+![Overall Architecture of LB](../../Images/Load%20Balancer/lb-lowlevel-arch.png)
