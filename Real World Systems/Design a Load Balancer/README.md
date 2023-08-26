@@ -44,3 +44,7 @@ Pick the server having the `least connections` from the load balancer
 Hash of some attribute (ip, userId, url) determines which server to pick (You can configure `stickiness`)
 
 ---
+
+![Demonstration of low-level architecture of Load Balancer](../../Images/Load%20Balancer/lb-lowlevel-arch.png)
+
+The information about the backend server will be stored in the load balancer server memory. Initially, the load balancer server will pull the details about the backend servers when it is initialised. Additionally, the load balancer server will be subscribed to a pub/sub so that it can be updated every time there is a change in the backend servers.
