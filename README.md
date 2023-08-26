@@ -13,6 +13,7 @@ Just a heads up, these notes and diagrams aren't meant to replace comprehensive 
 Feel free to browse through the different sections. I hope you find the information here helpful!
 
 - [TCP](./TCP)
+  - [Important TCP Concepts](./TCP/Important%20TCP%20Concepts/README.md)
 - [Caching](./Caching)
 - [Scaling](./Scaling)
 - [Databases](./Databases)
