@@ -1,4 +1,4 @@
-# System Design
+# 🚀 System Design
 
 Hey there! Welcome to the System Design Compendium. This is a place where I've gathered all my personal notes, insights, resources, and rich diagrams related to system design. It's a collection of knowledge that I think will be really helpful for anyone who's interested in software architecture.
 
