@@ -79,3 +79,16 @@ function acquireLock(q: string) {
   }
 }
 ```
+
+### Function to release the lock
+
+---
+
+```tsx
+function releaseLock(q: string) {
+  const consumerId = getMyId();
+  const v = redis.get(q);
+  // Delete if the consumer owns the locks, or else don't delete it
+  if (v === consumerId) redis.delete(q);
+}
+```
