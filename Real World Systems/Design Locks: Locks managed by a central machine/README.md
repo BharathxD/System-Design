@@ -55,3 +55,27 @@ REL_LOCK()
 2. Automatic Expiration
 
 (As we discussed in database requirements)
+
+### Function to acquire the lock
+
+---
+
+```tsx
+function acquireLock(q: string) {
+  // IP Address, host name or could be anything
+  const consumerId = getMyId();
+  while (true) {
+    /**
+     * setnx: set a key with some expiration time
+     * It is an atomic command
+     * If the key is already set, don't replace it
+     */
+    //
+    const v = redis.setnx(q, consumer_id, 300);
+    // The program returns and continues it's execution
+    if (v === 1) return;
+    // While others wait or stuck on this while loop (300ms)
+    else continue;
+  }
+}
+```
