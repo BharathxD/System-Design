@@ -110,3 +110,14 @@ Distributed locks are mostly used in systems which need high degree of correctio
 - Client goes throughout 5 nodes, trying to ACQ_LOCK with timeout
 - If the lock is acquired on >50% then ACQUIRED
 - Else release the lock on acquired instances and return FAILED
+
+<aside>
+💡 We are only doing this is to prevent SPoF
+
+</aside>
+
+<aside>
+💡 **Read this paper (Google still uses this in production)**
+- Chubby: Lock service of loosely coupled distributed systems
+
+</aside>
