@@ -92,3 +92,5 @@ function releaseLock(q: string) {
   if (v === consumerId) redis.delete(q);
 }
 ```
+
+‘EVAL’ Executed atomically using LUA Script (Kind of like a procedure)
