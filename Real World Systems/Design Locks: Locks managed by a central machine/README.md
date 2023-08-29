@@ -37,3 +37,21 @@ Redis would be the Database
 - Also has a feature called TTL
 
 ![Example with Database Involved](../../Images/Locks/lock-database.png)
+
+### Consumer’s pseudocode
+
+```sql
+ACQ_LOCK()
+READ_MSG()
+REL_LOCK()
+```
+
+- All consumers wait on ACQ_LOCK()
+- While one of them READ_MSG()
+
+**Our requirements from the lock manager?**
+
+1. Atomic Operations
+2. Automatic Expiration
+
+(As we discussed in database requirements)
