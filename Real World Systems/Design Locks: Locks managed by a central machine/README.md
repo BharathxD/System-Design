@@ -92,6 +92,7 @@ function releaseLock(q: string) {
   if (v === consumerId) redis.delete(q);
 }
 ```
+
 ‘EVAL’ Executed atomically using LUA Script (Kind of like a procedure)
 
 ### Redis is prone to SPoF in this architecture, let’s fix it
@@ -101,3 +102,11 @@ function releaseLock(q: string) {
 (MongoDB transaction uses remote locks on involved rows) Distributed [Redlock] → Distributed locks with Redis
 
 Distributed locks are mostly used in systems which need high degree of correction
+
+**Idea:** 5 master nodes of redis, No replication, All independent
+
+**Acquire Lock**
+
+- Client goes throughout 5 nodes, trying to ACQ_LOCK with timeout
+- If the lock is acquired on >50% then ACQUIRED
+- Else release the lock on acquired instances and return FAILED
