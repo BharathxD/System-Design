@@ -1,7 +1,5 @@
 # Brainstorming on caching at different levels
 
----
-
 1. In main memory of API Servers
    1. Limited to one api server
    2. If API server crashes, the data would be lost
