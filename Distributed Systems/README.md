@@ -1,6 +1,7 @@
 # Distributed Systems
 
-Distributed System is the ability to abstract out the Distributed-ness. Multiple Components and Multiple Machines
+- Distributed System is the ability to abstract out the Distributed-ness.
+- Multiple Components and Multiple Machines
 
 The best and the worst thing about distributed systems is,
 

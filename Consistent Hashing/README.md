@@ -30,6 +30,7 @@ server = x % 3 = i
 
 Say we want to share 6 keys: `k1, k2, k3, k4, k5 and k6`
 
+```rs
 k1 → fn(k1) % 3 = 2
 
 k1 → fn(k2) % 3 = 0
@@ -41,6 +42,7 @@ k1 → fn(k4) % 3 = 2
 k1 → fn(k5) % 3 = 1
 
 k1 → fn(k6) % 3 = 0
+```
 
 The only challenge is: If a storage node is removed or added, the proxy connot just forward request to any arbitrary node because it won’t have the data
 
