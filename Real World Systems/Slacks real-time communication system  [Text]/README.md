@@ -42,9 +42,10 @@
 | Channels       |         |
 | -------------- | ------- |
 | id             |         |
+| user_id        |         |
 | org            |         |
 | name           |         |
-| type: group_id | user_id |
+| type: group_id |         |
 
 | Messages   |
 | ---------- |
