@@ -39,11 +39,11 @@
 | muted        |
 | read_till    |
 
-| Channels       |
+| Channels       |         |
 | -------------- | ------- |
-| id             |
-| org            |
-| name           |
+| id             |         |
+| org            |         |
+| name           |         |
 | type: group_id | user_id |
 
 | Messages   |
