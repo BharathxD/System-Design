@@ -40,4 +40,4 @@ Key-feature: Server can proactively send data to the client, without client aski
 
 Use case: anywhere you need “Real-time” (or) “Low-latency”, communication for our end user over the internet think about websockets
 
-eg: Chat App, Realtime likes on a live stream App, stock market
+EG: Chat App, Realtime likes on a live stream App, stock market

@@ -2,6 +2,8 @@
 
 Ability to handle large number of **`concurrent`** requests
 
+---
+
 ### Vertical Scaling
 
 ---
