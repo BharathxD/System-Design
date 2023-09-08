@@ -2,11 +2,7 @@
 
 Ability to handle large number of **`concurrent`** requests
 
----
-
 ### Vertical Scaling
-
----
 
 Make infrastructure bulky add more CPU, RAM, Disk
 
@@ -17,8 +13,6 @@ Make infrastructure bulky add more CPU, RAM, Disk
   - Hardware Limitation
 
 ### Horizontal Scaling
-
----
 
 Make infrastructure bulky add more CPU, RAM, Disk
 
