@@ -1,7 +1,5 @@
 # How to approach a system design
 
-The following are two common approaches to design a system
-
 ## Spiral
 
 Decide your core and build the system around it
