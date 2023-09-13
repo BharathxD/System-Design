@@ -19,3 +19,9 @@ Snowflake is not a central service, instead it runs app service as a native func
 The first 41 bits represent epoch milliseconds, and with each millisecond, the ID moves forward. This allows us to retrieve objects before or after a certain time.
 
 Twitter's pagination is not limit/offset based. Instead, it uses 'since_id' to paginate.
+
+## Snowflake at Discord
+
+---
+
+Same logic as twitter, just epoch = 1st second of 2015 (To get a larger range)
