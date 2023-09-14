@@ -43,6 +43,15 @@ CREATE TABLE `query` (
 )
 ```
 
+### Idea
+
+---
+
+Delete and re-insert the row will make DB generate the next id (auto-incremented)
+
+1. We can either delete and re-insert in one transaction, but it is extremely costly on the DB
+2. UPSERTS (Delete + Inserts = Upsert)
+
 ## Snowflake at Twitter
 
 ---
