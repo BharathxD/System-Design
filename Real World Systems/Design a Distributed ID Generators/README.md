@@ -9,6 +9,15 @@ Why did Flicker need its own ID generation?
 - The database was sharded.
 - To avoid collisions and guarantee uniqueness.
 
+Why are they building their own ID system if UUID already exists?
+
+- UUIDs are at least 128-bit (16 bytes) integers.
+- They are very inefficient at scale.
+  - They do not index well.
+  - They bloat the index as the database scales.
+- Although they are random, which is good for security, disk-heavy index lookups cause significant database performance issues.
+
+
 ## Snowflake at Twitter
 
 ---
