@@ -71,6 +71,8 @@ INSERT INTO `tickets` (stub) VALUES ('a')
 ON DUPLICATE KEY id = id + 1;
 ```
 
+![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-2.png)
+
 ## Snowflake at Twitter
 
 ---
