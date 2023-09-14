@@ -28,6 +28,21 @@ They also do not index well!
 
 </aside>
 
+### **Central Ticker Server (MySQL)**
+
+---
+
+- Whoever wants an ID, fires a query to this database
+
+```sql
+CREATE TABLE `query` (
+	id bigint unsigned not null auto_increment,
+	stub char not null default ` `,
+	PRIMARY KEY(id),
+	UNIQUE KEY(stub)
+)
+```
+
 ## Snowflake at Twitter
 
 ---
