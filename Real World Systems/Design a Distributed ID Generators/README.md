@@ -17,6 +17,16 @@ Why are they building their own ID system if UUID already exists?
   - They bloat the index as the database scales.
 - Although they are random, which is good for security, disk-heavy index lookups cause significant database performance issues.
 
+So why is MongoDB using a 12-byte ObjectID?
+
+![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-1.png)
+
+They also do not index well!
+
+<aside>
+💡 If you cannot fit the indexes in-memory, you cannot make your DB fast
+
+</aside>
 
 ## Snowflake at Twitter
 
