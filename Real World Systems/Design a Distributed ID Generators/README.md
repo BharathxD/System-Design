@@ -52,6 +52,25 @@ Delete and re-insert the row will make DB generate the next id (auto-incremented
 1. We can either delete and re-insert in one transaction, but it is extremely costly on the DB
 2. UPSERTS (Delete + Inserts = Upsert)
 
+MySQL provides 2 ways of doing it
+
+```sql
+INSERT … ON DUPLICATE KEY UPDATE …
+```
+
+Tries to insert, if it fails due to UNIQUE KEY then the update clause is expected
+
+```sql
+REPLACE INTO … ← This is 32x slower compared to ON DUPLICATE
+```
+
+Tries to insert, if it fails due to UNIQUE KEY then the old row is deleted and new row is inserted
+
+```sql
+INSERT INTO `tickets` (stub) VALUES ('a')
+ON DUPLICATE KEY id = id + 1;
+```
+
 ## Snowflake at Twitter
 
 ---
