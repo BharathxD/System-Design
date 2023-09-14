@@ -1,5 +1,14 @@
 # Design some Distributed ID Generators
 
+## How Flickr did it?
+
+---
+
+Why did Flicker need its own ID generation?
+
+- The database was sharded.
+- To avoid collisions and guarantee uniqueness.
+
 ## Snowflake at Twitter
 
 ---
