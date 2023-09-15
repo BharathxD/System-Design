@@ -86,6 +86,13 @@ There are two ticket servers:
 
 To balance the load, use a load balancer with a Round-robin algorithm.
 
+**Ticket Server 1**
+
+---
+
+- Auto-increment increment: 2
+- Auto-increment offset: 1
+
 ## Snowflake at Twitter
 
 ---
