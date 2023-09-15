@@ -180,3 +180,31 @@ Instagram has implemented logical shards, which are distributed across physical 
 Instagram has logical shards (1000s) on Physical DB Servers (10/15)
 
 EG: MySQL Server → Physical & CREATE DATABASE → Logical
+
+![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-6.png)
+
+```sql
+CREATE DATABASE insta5;
+\c insta5;
+CREATE SEQUENCE insta5.photos_id_seq;
+CREATE TABLE insta5.photos (
+    id bigint DEFAULT nextval('insta5.photos_id_seq'),
+    -- Other columns in the table
+);
+CREATE OR REPLACE FUNCTION
+  insta5.next_id(OUT result bigint) AS $$
+DECLARE
+    epoch bigint := 1314220021721;
+    seq_id bigint;
+    now_ms bigint;
+    shard_id bigint := 5;
+BEGIN
+    SELECT nextval('insta5.photos_id_seq') % 1024 INTO seq_id;
+    now_ms := extract(epoch from now()) * 1000;
+    result := (now_ms - epoch) << 23;
+    result := result | (shard_id << 10);
+    result := result | seq_id;
+END;
+$$ LANGUAGE plpgsql;
+```
+
