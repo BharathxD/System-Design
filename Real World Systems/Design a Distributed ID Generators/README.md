@@ -93,6 +93,17 @@ To balance the load, use a load balancer with a Round-robin algorithm.
 - Auto-increment increment: 2
 - Auto-increment offset: 1
 
+**Ticket Server 2**
+
+---
+
+- Auto-increment increment: 2
+- Auto-increment offset: 2
+
+![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-3.png)
+
+If one server goes down, the other server continues to serve. For example, 2, 4, 6, 8, …., 200, 202. When the odd server comes back, we reset the offset on both databases by MAX + Buffer. For instance, 240 and 241.
+
 ## Snowflake at Twitter
 
 ---
