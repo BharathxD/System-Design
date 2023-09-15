@@ -75,7 +75,16 @@ ON DUPLICATE KEY id = id + 1;
 
 ### Caution: SPOF!
 
+---
+
 It is prone to Single Point of failure as we habe only one database
+
+There are two ticket servers:
+
+- One is for odd numbers
+- The other is for even numbers
+
+To balance the load, use a load balancer with a Round-robin algorithm.
 
 ## Snowflake at Twitter
 
