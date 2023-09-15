@@ -208,3 +208,21 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 
+First, we're creating a brand new database called "insta5" where we'll store all sorts of data.
+
+Next, we're setting up a specific table within this database named "photos." This table will have several columns, but they're not shown here.
+
+Now, let's talk about the interesting part – a function called "insta5.next_id." This function is designed to generate unique identifiers for records in our "photos" table.
+
+Inside this function:
+
+- We have a variable called "epoch," which represents a point in time (1314220021721 milliseconds since some reference point).
+- Another variable called "shard_id" is set to 5.
+- We calculate a "seq_id" by taking the remainder of a certain sequence value divided by 1024. This "seq_id" will help make our identifiers unique.
+
+Then, we calculate the final "result" identifier:
+
+- First, we figure out the current time in milliseconds, which is not shown here.
+- We subtract the "epoch" time from the current time and shift the result left by 23 bits.
+- We also incorporate the "shard_id" by shifting it left by 10 bits.
+- Finally, we combine everything to create a unique identifier for our records.
