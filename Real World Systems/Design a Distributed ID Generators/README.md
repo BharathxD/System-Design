@@ -73,6 +73,10 @@ ON DUPLICATE KEY id = id + 1;
 
 ![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-2.png)
 
+### Caution: SPOF!
+
+It is prone to Single Point of failure as we habe only one database
+
 ## Snowflake at Twitter
 
 ---
