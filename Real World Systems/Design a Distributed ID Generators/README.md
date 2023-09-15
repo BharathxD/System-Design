@@ -147,3 +147,36 @@ Same logic as twitter, just epoch = 1st second of 2015 (To get a larger range)
 ---
 
 They call it Sonyflake and their Go-based implementation is open-sourced and can be found on Github
+
+## Snowflake at Instagram
+
+---
+
+Requirements
+
+---
+
+- IDs sortable by time
+  - For pagination and Filter and Batch processing
+- ~64bits to be efficient on index
+- No new service
+
+Structure
+
+---
+
+- 41 Bits - Epoch since Jan 1, 2011
+- 13 Bits - DB shard ID
+- 10 Bits - Per shard sequence number
+
+Instagram uses a technique called snowflaking in the database during the INSERT process. This technique is used to meet certain requirements that are essential for efficient processing of data. One of the key requirements is the ability to sort IDs by time. This feature is important for pagination, filtering, and batch processing. In order to ensure that the IDs are sortable, they need to be ~64bits in size. This allows for efficient indexing of the data.
+
+Another important requirement is to avoid introducing any new services. This means that the snowflaking technique needs to be implemented within the existing infrastructure.
+
+The structure of the snowflake ID is composed of three parts. The first part is the epoch since Jan 1, 2011, which is represented by 41 bits. The second part is the DB shard ID, which is represented by 13 bits. Finally, the per shard sequence number is represented by 10 bits.
+
+Instagram has implemented logical shards, which are distributed across physical DB servers. For example, a MySQL server is used as the physical server, and each database created on that server is considered to be a logical shard. By using this approach, Instagram is able to effectively manage large amounts of data while maintaining high levels of performance.
+
+Instagram has logical shards (1000s) on Physical DB Servers (10/15)
+
+EG: MySQL Server → Physical & CREATE DATABASE → Logical
