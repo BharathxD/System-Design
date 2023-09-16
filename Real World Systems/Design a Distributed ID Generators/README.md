@@ -1,19 +1,5 @@
 # Design some Distributed ID Generators
 
-
-
-## Snowflake at Discord
-
----
-
-Same logic as twitter, just epoch = 1st second of 2015 (To get a larger range)
-
-## Snowflake at Sony
-
----
-
-They call it Sonyflake and their Go-based implementation is open-sourced and can be found on Github
-
 ## Snowflake at Instagram
 
 ---
