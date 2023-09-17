@@ -1,7 +1,9 @@
-# Design some Distributed ID Generators
+# Distributed ID Generators Comparison
 
-[How Flickr did it?](./Flicker.md)
-[Snowflake at Twitter](./Snowflake-Twitter.md)
-[Snowflake at Instagram](./Instagram-Snowflake.md)
-[Snowflake at Sony](./Sony-Snowflake.md)
-[Snowflake at Discord](./Discord-Snowflake.md)
+Explore various distributed ID generator implementations to understand their unique approaches:
+
+- [Flickr's Approach](./Flicker.md)
+- [Snowflake by Twitter](./Snowflake-Twitter.md)
+- [Instagram's Snowflake](./Instagram-Snowflake.md)
+- [Sony's Snowflake](./Sony-Snowflake.md)
+- [Discord's Snowflake](./Discord-Snowflake.md)
