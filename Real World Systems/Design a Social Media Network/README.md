@@ -27,3 +27,14 @@ CDN has it’s own domain, say `https://eg.mycdn.net`
 | url     |
 
 Building the table in the manner shown above would be highly suboptimal. Why? Because if something is derivable, there is no need to store it.
+
+**So what’s the better way of building it?**
+
+The user keeps track of the random image ID it got from the image it uses this create the entry in the posts table
+
+| Posts ✅ |
+| -------- |
+| id       |
+| user_id  |
+| image_id |
+| caption  |
