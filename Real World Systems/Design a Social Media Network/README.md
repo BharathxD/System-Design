@@ -63,3 +63,5 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 3. When the URL is rendered via an IMG tag, the request is directed to a Content Delivery Network (CDN).
 4. The CDN validates the request by utilizing the attached keys and verifying the validity and expiration status of the certificates.
 5. It's important to note that the URL has a limited lifespan due to the short duration of the certificates.
+
+![Overall Architecture](../../Images/Design%20a%20Social%20Media%20Network/overall-arch.png)
