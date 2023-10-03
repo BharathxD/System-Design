@@ -43,3 +43,13 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 
 - Linked[In] also does this
 - CDNs also do this
+
+<aside>
+💡 When the organization decides to switch from, for example, Cloudflare CDN to Amazon CloudFront CDN, changing all the URLs in the tables can be a cumbersome process.
+
+</aside>
+<br/>
+<aside>
+⚠️ Anything that is derivable, don’t store the derived information
+
+</aside>
