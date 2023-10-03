@@ -65,3 +65,11 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 5. It's important to note that the URL has a limited lifespan due to the short duration of the certificates.
 
 ![Overall Architecture](../../Images/Design%20a%20Social%20Media%20Network/overall-arch.png)
+
+### Image Optimizations
+
+---
+
+1. Users belong to different geographies, different network bandwidths, different mobile devices, different processing power
+2. So, sending 5MB photo uploaded by your favourite celeb to all the followers is a very bad idea!
+3. So we should have different resolutions of photos ready to server to the users depending on their “state”
