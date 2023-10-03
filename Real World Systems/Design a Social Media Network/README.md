@@ -38,3 +38,8 @@ The user keeps track of the random image ID it got from the image it uses this c
 | user_id  |
 | image_id |
 | caption  |
+
+URL Decomposition: s3://images/`<user_id>`/`<image_id>`
+
+- Linked[In] also does this
+- CDNs also do this
