@@ -73,3 +73,11 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 1. Users belong to different geographies, different network bandwidths, different mobile devices, different processing power
 2. So, sending 5MB photo uploaded by your favourite celeb to all the followers is a very bad idea!
 3. So we should have different resolutions of photos ready to server to the users depending on their “state”
+
+<aside>
+💡 Instead of building our image optimizer service, we can use CDN that gives this feature out-of-the-box
+
+</aside>
+<br />
+
+![CDN Link Demonstration example](../../Images/Design%20a%20Social%20Media%20Network/cdn-link-demonstration.png)
