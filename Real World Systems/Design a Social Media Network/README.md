@@ -100,3 +100,34 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 
 Given that we are keeping track of only top 100 posts, it’s probably better to store all 100 posts in an array for a particular hashtag
 
+**First Approach (Consistant)**
+
+```json
+{
+    tag: "sunset",
+    total_photos: 1_200_000,
+    top_100: ["user_1", "user_2", ....]
+}
+```
+
+`Fast, less space but needs to talk to posts db`
+
+**Second Approach (Efficient)**
+
+```json
+{
+    tag: "sunset",
+    total_photos: 1_200_000,
+    top_100: [
+        {
+            id,
+            ....
+        },
+        ....
+    ]
+}
+```
+
+`Large space, fast time and do not need to talk to posts db`
+
+It all comes down to the Preference or SLA
