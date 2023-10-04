@@ -4,7 +4,7 @@
 
 CDN transparently sits between your user and the origin
 
-![CDN Demonstration](../../Images/Design%20a%20Social%20Media%20Network/cdn.png)
+![CDN Demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/cdn.png)
 
 Consider this scenario: Your point of origin is **[https://example.com](https://example.com/)**, and it hosts a variety of content types, such as JSON, Bytes, HTML, Video, Image, and more.
 
@@ -14,7 +14,7 @@ Meanwhile, your Content Delivery Network (CDN) operates under its distinct domai
 
 ---
 
-![Presigned url architectural flow](../../Images/Design%20a%20Social%20Media%20Network/presigned-url.png)
+![Presigned url architectural flow](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/presigned-url.png)
 
 ### Schema
 
@@ -64,7 +64,7 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 4. The CDN validates the request by utilizing the attached keys and verifying the validity and expiration status of the certificates.
 5. It's important to note that the URL has a limited lifespan due to the short duration of the certificates.
 
-![Overall Architecture](../../Images/Design%20a%20Social%20Media%20Network/overall-arch.png)
+![Overall Architecture](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/overall-arch.png)
 
 ### Image Optimizations
 
@@ -80,4 +80,4 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 </aside>
 <br />
 
-![CDN Link Demonstration example](../../Images/Design%20a%20Social%20Media%20Network/cdn-link-demonstration.png)
+![CDN Link Demonstration example](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/cdn-link-demonstration.png)
