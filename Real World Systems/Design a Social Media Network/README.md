@@ -102,7 +102,7 @@ Given that we are keeping track of only top 100 posts, it’s probably better to
 
 **First Approach (Consistant)**
 
-```json
+```js
 {
     tag: "sunset",
     total_photos: 1_200_000,
@@ -114,7 +114,7 @@ Given that we are keeping track of only top 100 posts, it’s probably better to
 
 **Second Approach (Efficient)**
 
-```json
+```js
 {
     tag: "sunset",
     total_photos: 1_200_000,
