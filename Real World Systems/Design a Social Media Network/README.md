@@ -163,3 +163,19 @@ PS: It need not to happen in real-time
 - Adaptor Pattern
 - Effective batching and counting
 - READ and WRITE path optimizations
+
+### Further Optimizations
+
+---
+
+A good way to optimize systems is to identify the `READ PATH` and `WRITE PATH` and optimize them independently
+
+**READ PATH optimizations**
+
+- Key value based access for a key (hashtag) get the value (details)
+
+**WRITE PATH optimizations**
+
+- Ingestion in Kafka
+- Reading from Kafka
+- Quick in memory counting
