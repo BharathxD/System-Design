@@ -1,3 +1,5 @@
+# Design a social media network
+
 ### CDN
 
 ---
@@ -81,3 +83,20 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 <br />
 
 ![CDN Link Demonstration example](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/cdn-link-demonstration.png)
+
+## The Hastag Service
+
+- Millions of hashtags
+- Assume there is a service that notifies us where it generates “top” photos for a hashtag
+
+### Brainstorm
+
+- Storage
+- Counting (In the large volumes)
+- Inter-service communication (Posts service to Hashtag service ensuring atomicity and partial update)
+- Super-fast response times
+
+![UI demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/hastag_overview.png)
+
+Given that we are keeping track of only top 100 posts, it’s probably better to store all 100 posts in an array for a particular hashtag
+
