@@ -131,3 +131,27 @@ Given that we are keeping track of only top 100 posts, it’s probably better to
 `Large space, fast time and do not need to talk to posts db`
 
 It all comes down to the Preference or SLA
+
+### How do we update total number of photos and top hundred posts?
+
+---
+
+PS: It need not to happen in real-time
+
+![Demonstration on how updateing the count and top 100 posts work](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/update_count_and_posts.png)
+
+- Reads POST_PUBLISH events from kafka
+- Extract all the hashtags from the post
+- Creates `n` new events on topic `POST_HASHTAG` from n hosts partitioned by hashtag
+
+<aside>
+💡 Note that we are using hash-based partitioning. You may have three partitions, and millions of hashtags are distributed across them (Same goes for kafka with user_id partition)
+
+</aside>
+
+### Overall Architecture
+
+---
+
+![Overall Architecture](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/overall_arch.png)
+
