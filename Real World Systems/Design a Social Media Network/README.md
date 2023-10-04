@@ -155,3 +155,11 @@ PS: It need not to happen in real-time
 
 ![Overall Architecture](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/overall_arch.png)
 
+### Key Takeaways
+
+---
+
+- Kafka as a glue
+- Adaptor Pattern
+- Effective batching and counting
+- READ and WRITE path optimizations
