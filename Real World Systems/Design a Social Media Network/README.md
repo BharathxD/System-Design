@@ -1,10 +1,12 @@
 # Design a social media network
 
-### CDN
+In this design system, we'll be exploring different aspects of designing a social media network, with a focus on key components like Content Delivery Networks (CDNs), managing bandwidth, optimizing data schema, considering privacy, optimizing images, and understanding how hashtag services work. We'll be diving into the architectural details, optimization strategies, and important things to remember in order to create a social media platform that's efficient and responsive.
+
+### CDN (Content Delivery Network)
 
 ---
 
-CDN transparently sits between your user and the origin
+A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
 
 ![CDN Demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/cdn.png)
 
@@ -12,9 +14,11 @@ Consider this scenario: Your point of origin is **[https://example.com](https://
 
 Meanwhile, your Content Delivery Network (CDN) operates under its distinct domain, like **[https://eg.mycdn.net](https://eg.mycdn.net/)**.
 
-### Bandwidth Concern Pre-signed URL with expiration
+### Bandwidth Concern (Pre-signed URL with expiration)
 
----
+By default, all Amazon S3 objects are private, only the object owner has permission to access them. However, the object owner may share objects with others by creating a presigned URL. A presigned URL uses security credentials to grant time-limited permission to download objects. The URL can be entered in a browser or used by a program to download the object. The credentials used by the presigned URL are those of the AWS user who generated the URL.
+
+For general information about presigned URLs, see [Working with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html).
 
 ![Presigned url architectural flow](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Social+Media+Network/presigned-url.png)
 
@@ -86,8 +90,11 @@ URL Decomposition: s3://images/`<user_id>`/`<image_id>`
 
 ## The Hastag Service
 
-- Millions of hashtags
-- Assume there is a service that notifies us where it generates “top” photos for a hashtag
+Let's create a hashtag service
+
+### Requirements
+
+Millions of hashtags exist, and let's assume there's a service that notifies us of where it generates 'top' photos for a hashtag.
 
 ### Brainstorm
 
@@ -130,7 +137,7 @@ Given that we are keeping track of only top 100 posts, it’s probably better to
 
 `Large space, fast time and do not need to talk to posts db`
 
-It all comes down to the Preference or SLA
+It all comes down to the Preferences or SLA
 
 ### How do we update total number of photos and top hundred posts?
 
