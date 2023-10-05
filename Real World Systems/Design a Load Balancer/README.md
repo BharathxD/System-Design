@@ -45,7 +45,7 @@ Hash of some attribute (ip, userId, url) determines which server to pick (You ca
 
 ---
 
-![Demonstration of low-level architecture of Load Balancer](../../Images/Load%20Balancer/lb-lowlevel-arch.png)
+![Demonstration of low-level architecture of Load Balancer](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Load%20Balancer/lb-lowlevel-arch.png)
 
 The information about the backend server will be stored in the load balancer server memory. Initially, the load balancer server will pull the details about the backend servers when it is initialised. Additionally, the load balancer server will be subscribed to a pub/sub so that it can be updated every time there is a change in the backend servers.
 
@@ -67,4 +67,4 @@ The load balancer is prone to a single point of failure. To overcome this issue,
 
 ---
 
-![Overall Architecture of LB](../../Images/Load%20Balancer/lb-overall-arch.png)
+![Overall Architecture of LB](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Load%20Balancer/lb-overall-arch.png)
