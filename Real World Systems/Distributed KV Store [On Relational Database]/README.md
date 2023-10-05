@@ -95,7 +95,7 @@ SELECT * FROM store WHERE key = k1 AND ttl > NOW()
 
 ---
 
-![HLA Arch 1 Demonstration](../../Images/Distributed%20KV/hla-1.png)
+![HLA Arch 1 Demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Distributed%20KV/hla-1.png)
 
 Read from read replicas (If staleness is not a problem)
 
@@ -105,6 +105,6 @@ Or read from Master Node for Strong Consistency
 
 ---
 
-![HLA Arch 2 Demonstration](../../Images/Distributed%20KV/hla-2.png)
+![HLA Arch 2 Demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Distributed%20KV/hla-2.png)
 
 Each master node owns an exclusive fragment of the data
