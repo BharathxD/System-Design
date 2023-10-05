@@ -17,7 +17,7 @@ Example: ‘apt-get upgrade’ cannot be run twice concurrently
 
 To understand remote locks better, let’s synchronise multiple consumers over an unprotected remote queue
 
-![Abstract Architecture of lock](../../Images/Locks/abstract-lock.png)
+![Abstract Architecture of lock](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Locks/abstract-lock.png)
 
 Queue is unprotected, we want one consumer to make call to the queue at a time (Not all consumers can read at a time)
 
@@ -36,7 +36,7 @@ Redis would be the Database
 - It provides RedLock
 - Also has a feature called TTL
 
-![Example with Database Involved](../../Images/Locks/lock-database.png)
+![Example with Database Involved](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Locks/lock-database.png)
 
 ### Consumer’s pseudocode
 
