@@ -39,13 +39,13 @@
 | muted        |
 | read_till    |
 
-| Channels       |         |
-| -------------- | ------- |
-| id             |         |
-| user_id        |         |
-| org            |         |
-| name           |         |
-| type: group_id |         |
+| Channels       |     |
+| -------------- | --- |
+| id             |     |
+| user_id        |     |
+| org            |     |
+| name           |     |
+| type: group_id |     |
 
 | Messages   |
 | ---------- |
@@ -81,4 +81,4 @@ Don’t create multiple WebSocket connection, it could slow down the system
 
 ---
 
-![Overall Architecture](../../Images/Slack’s%20real-time%20communication%20system%20[Text]/slack.png)
+![Overall Architecture](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Slack’s%20real-time%20communication%20system%20[Text]/slack.png)
