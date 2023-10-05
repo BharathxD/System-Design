@@ -1,6 +1,6 @@
 # Design a Rate-limiter
 
-![Arch 1](../../Images/Rate%20Limiter/rate-limiter-1.png)
+![Arch 1](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Rate%20Limiter/rate-limiter-1.png)
 
 Systems break down under tremendous load, and we need to ensure that it doesn’t happen
 
@@ -27,7 +27,7 @@ Let’s implement the rate limiter as a library rather than a service
 
 - The library holds all the business logic out there
 
-![Arch 1](../../Images/Rate%20Limiter/rate-limiter-2.png)
+![Arch 1](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Rate%20Limiter/rate-limiter-2.png)
 
 ### How to we scale the Redis DB?
 
