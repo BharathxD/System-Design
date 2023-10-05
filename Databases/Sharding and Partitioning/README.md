@@ -27,7 +27,7 @@
 
 Let’s say that you have partitioned he 100GB of total data into 5 mutually exclusive partitions
 
-![API Server should have the business logic to know which shard it should communicate with (Can use a proxy too)](../../Images/Sharding%20and%20Partitioning/sharding-partitioning.png)
+![API Server should have the business logic to know which shard it should communicate with (Can use a proxy too)](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Sharding%20and%20Partitioning/sharding-partitioning.png)
 
 API Server should have the business logic to know which shard it should communicate with (Can use a proxy too)
 

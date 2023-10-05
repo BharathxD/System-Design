@@ -11,9 +11,13 @@ Caches are anything that helps you avoid **expensive** Network I/O, Disk I/O, or
 </aside>
 
 ---
-![Caching Demonstration - Arch](../../Images/Caching/redis.png)
+
+![Caching Demonstration - Arch](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Caching/redis.png)
+
 ### Caching is fast and expensive
+
 ---
+
 - Hence we don’t cache all the data (Just a subset of data that is most likely to be accessed).
 - `**Note: Caches are not restricted to RAM based storage**`
 - Any storage, hat is ‘nearer’ nd helps you avoid something expensive is a cache for you

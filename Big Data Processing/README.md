@@ -16,7 +16,7 @@ More computers, more cpu, more processing
 
 ### Flow
 
-![Flow Demonstration](../Images/Big%20Data%20Processing/flow.png)
+![Flow Demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Big%20Data%20Processing/flow.png)
 
 1. User submits the job to ‘coordinator’
 2. Coordinator distributes the job across multiple machines
@@ -36,6 +36,6 @@ More computers, more cpu, more processing
 
 Large scale data processing on commodity hardware it has connectors to a lot of databases and infra components
 
-![Spark Operation](../Images/Big%20Data%20Processing/spark.png)
+![Spark Operation](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Big%20Data%20Processing/spark.png)
 
 **eg**: combine user, order, payments and logistics DBs and put the result in AWS Redshift

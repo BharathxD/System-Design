@@ -1,6 +1,6 @@
 # Design a recommendation engine
 
-![Architecture 1](../../Images/Design%20a%20recommendation%20engine/recommendation-engine-1.png)
+![Architecture 1](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20recommendation%20engine/recommendation-engine-1.png)
 
 **Cosine Similarity [Exploitation]**
 
@@ -8,7 +8,7 @@
 
 - Convert product into vectors in ‘n’ dimensional space where ‘n’ = features like tokens, price, category, etc
 
-![Architecture 2](../../Images/Design%20a%20recommendation%20engine/recommendation-engine-2.png)
+![Architecture 2](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20recommendation%20engine/recommendation-engine-2.png)
 
 - Product A and B are more similar than A & C
 - We know `cos(0)=1` and `cos(90)=0`
@@ -16,7 +16,7 @@
 
 **Collaborative Filtering [Exploration]**
 
-![Architecture 3](../../Images/Design%20a%20recommendation%20engine/recommendation-engine-3.png)
+![Architecture 3](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20recommendation%20engine/recommendation-engine-3.png)
 
 - Collaborative filtering clusters users and recommends things that other similar user bought
 - eg:

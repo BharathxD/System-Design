@@ -9,11 +9,11 @@
 
 ### Schema
 
-![Screenshot 2023-08-19 at 3.57.12 PM.png](../../Images/Design%20Airline%20Check-in%20System/airline-checkin-system-schema.png)
+![Screenshot 2023-08-19 at 3.57.12 PM.png](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20Airline%20Check-in%20System/airline-checkin-system-schema.png)
 
 ### High level Architecture
 
-![Screenshot 2023-08-19 at 3.58.47 PM.png](../../Images/Design%20Airline%20Check-in%20System/airline-checkin-system-hla.png)
+![Screenshot 2023-08-19 at 3.58.47 PM.png](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20Airline%20Check-in%20System/airline-checkin-system-hla.png)
 
 ### So how we make our transaction efficient with having one user take one seat
 

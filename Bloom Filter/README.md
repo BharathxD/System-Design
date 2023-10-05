@@ -20,7 +20,7 @@ Bloom filters are approximate data-structures hat says with 100% certainity that
 
 ## Eg: An 8-bit array
 
-![Bloom filter demonstration](../Images/Bloom%20Filter/bloom-filter.png)
+![Bloom filter demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Bloom%20Filter/bloom-filter.png)
 
 Let’s say that we store each of these (apple, ball, cat) in an Array (Filter)
 

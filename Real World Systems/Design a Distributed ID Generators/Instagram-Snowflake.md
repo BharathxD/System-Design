@@ -29,7 +29,7 @@ Instagram has logical shards (1000s) on Physical DB Servers (10/15)
 
 EG: MySQL Server → Physical & CREATE DATABASE → Logical
 
-![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-6.png)
+![ID distribution demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Distributed%20ID%20Generators/didg-6.png)
 
 ```sql
 CREATE DATABASE insta5;

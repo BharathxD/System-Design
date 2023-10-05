@@ -8,7 +8,7 @@
 - Finally, return the data
 - Eg: Caching Blogs
 
-![Demonstration of Lazy Population](../../Images/Caching/lazy-population.png)
+![Demonstration of Lazy Population](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Caching/lazy-population.png)
 
 ### Eager Population
 
@@ -19,4 +19,4 @@
 - Proactively push the data to the cache, because you anticipate the need
 - Eg: You know that a popular person’s tweet will most likely br accessed frequently, so you cache the tweet
 
-![Demonstration of Eager Population](../../Images/Caching/eager-population.png)
+![Demonstration of Eager Population](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Caching/eager-population.png)

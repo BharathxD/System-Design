@@ -26,7 +26,7 @@ server = x % 3 = i
 
 ## Hash based ‘Routing’ (Ownership) for distributed storage
 
-![Hash based routing for distributed storage](../Images/Consistent%20Hashing/hash-based-routing.png)
+![Hash based routing for distributed storage](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Consistent%20Hashing/hash-based-routing.png)
 
 Say we want to share 6 keys: `k1, k2, k3, k4, k5 and k6`
 
@@ -66,7 +66,7 @@ Consistent hashing is an algorithm that helps in ddetermining data ownership (In
 
 Given hash functions are cyclic we can visualize it as a ring of integers, every node occupies one slot in the ring, the slot is calculated by passing the node’s IP address
 
-![Circular Hash Demonstration](../Images/Consistent%20Hashing/circular-hash.png)
+![Circular Hash Demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Consistent%20Hashing/circular-hash.png)
 
 We don’t need any circular linked-list kind of datastructures here, it’s just a simple array and can be part of a proxy
 
