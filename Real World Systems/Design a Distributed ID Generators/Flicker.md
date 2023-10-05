@@ -15,7 +15,7 @@ Why are they building their own ID system if UUID already exists?
 
 So why is MongoDB using a 12-byte ObjectID?
 
-![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-1.png)
+![ID distribution demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Distributed+ID+Generators/didg-1.png)
 
 They also do not index well!
 
@@ -67,7 +67,7 @@ INSERT INTO `tickets` (stub) VALUES ('a')
 ON DUPLICATE KEY id = id + 1;
 ```
 
-![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-2.png)
+![ID distribution demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Distributed+ID+Generators/didg-2.png)
 
 ### Caution: SPOF!
 
@@ -96,6 +96,6 @@ To balance the load, use a load balancer with a Round-robin algorithm.
 - Auto-increment increment: 2
 - Auto-increment offset: 2
 
-![ID distribution demonstration](../../Images/Design%20a%20Distributed%20ID%20Generators/didg-3.png)
+![ID distribution demonstration](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Distributed+ID+Generators/didg-3.png)
 
 If one server goes down, the other server continues to serve. For example, 2, 4, 6, 8, …., 200, 202. When the odd server comes back, we reset the offset on both databases by MAX + Buffer. For instance, 240 and 241.
