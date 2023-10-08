@@ -109,3 +109,26 @@ JOIN users
 ON photos.user_id = user.id
 WHERE users.hash = ?
 ```
+
+**Updating the photo to mark it active**
+
+```sql
+START TRANSACTION;
+
+UPDATE photos
+SET is_active = false
+WHERE is_active = true
+AND user_id = ?;
+
+UPDATE photos
+SET is_active = true
+WHERE user_id = ?
+AND id = ?
+AND is_active = false;
+
+UPDATE users
+SET active_photo_id = ....
+WHERE user_id = ?;
+
+COMMIT;
+```
