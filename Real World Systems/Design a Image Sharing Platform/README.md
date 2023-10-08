@@ -43,7 +43,7 @@ app.get("/raw/:path", async (req: Request, res: Response) => {
 
 Gravatar is your single embeddable URL for profile picture
 
-`https://gravatar.com/{hash(email)}` → Security (PII)
+`https://gravatar.com/{hash(email)}` → Security (Protecting Personally Identifiable Information)
 
 ```tsx
 if hash("bharath@example.com") = 'Ti09j98j'
@@ -53,21 +53,21 @@ if hash("bharath@example.com") = 'Ti09j98j'
 <img src="https://gravatar.com/Ti09j98j" />
 ```
 
-Renders the current profile picture
+This URL will display your current profile picture.
 
 ### Requirements
 
 ---
 
-- User can upload multiple pictures
-- Users can mark one as active
-- Active one should be returned as part of the response
+- Users can upload multiple pictures.
+- Users can designate one as active.
+- The active picture should be returned as part of the response.
 
 ### Brainstorm
 
 ---
 
-- Schema
+- Schema Design
 
 ### Schema
 
@@ -79,8 +79,7 @@ Renders the current profile picture
 | email |
 | hash  |
 
-- We will add a new column at the coming section
-- Hash is derivable right? Yes it is but look at the first query given below
+We'll be adding a new column in the upcoming section. But why do we need the 'hash' column? Let's examine the first query below.
 
 | Photos    |
 | --------- |
@@ -88,11 +87,11 @@ Renders the current profile picture
 | user_id   |
 | is_active |
 
-### Queries
+### Query Optimization
 
 ---
 
-The following SQL query is very inefficient and expensive, as where clause needs computation, and also cannot leverage indexes
+The following SQL query is highly inefficient and costly. The WHERE clause requires computation and cannot take advantage of indexes.
 
 ```sql
 SELECT * FROM photos
@@ -101,7 +100,7 @@ ON photos.user_id = user.id
 WHERE HASH(email) = ?
 ```
 
-So what’s the efficient query?
+So, what's the more efficient query?
 
 ```sql
 SELECT * FROM photos
