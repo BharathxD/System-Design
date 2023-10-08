@@ -87,3 +87,25 @@ Renders the current profile picture
 | id        |
 | user_id   |
 | is_active |
+
+### Queries
+
+---
+
+The following SQL query is very inefficient and expensive, as where clause needs computation, and also cannot leverage indexes
+
+```sql
+SELECT * FROM photos
+JOIN users
+ON photos.user_id = user.id
+WHERE HASH(email) = ?
+```
+
+So what’s the efficient query?
+
+```sql
+SELECT * FROM photos
+JOIN users
+ON photos.user_id = user.id
+WHERE users.hash = ?
+```
