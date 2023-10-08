@@ -54,3 +54,18 @@ if hash("bharath@example.com") = 'Ti09j98j'
 ```
 
 Renders the current profile picture
+
+### Requirements
+
+---
+
+- User can upload multiple pictures
+- Users can mark one as active
+- Active one should be returned as part of the response
+
+### Brainstorm
+
+---
+
+- Schema
+
