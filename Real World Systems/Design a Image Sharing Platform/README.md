@@ -69,3 +69,21 @@ Renders the current profile picture
 
 - Schema
 
+### Schema
+
+---
+
+| Users |
+| ----- |
+| id    |
+| email |
+| hash  |
+
+- We will add a new column at the coming section
+- Hash is derivable right? Yes it is but look at the first query given below
+
+| Photos    |
+| --------- |
+| id        |
+| user_id   |
+| is_active |
