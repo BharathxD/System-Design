@@ -34,3 +34,23 @@ app.get("/raw/:path", async (req: Request, res: Response) => {
   }
 });
 ```
+
+### Let’s build Gravatar
+
+---
+
+**What is gravatar?**
+
+Gravatar is your single embeddable URL for profile picture
+
+`https://gravatar.com/{hash(email)}` → Security (PII)
+
+```tsx
+if hash("bharath@example.com") = 'Ti09j98j'
+```
+
+```html
+<img src="https://gravatar.com/Ti09j98j" />
+```
+
+Renders the current profile picture
