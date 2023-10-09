@@ -131,3 +131,14 @@ WHERE user_id = ?;
 
 COMMIT;
 ```
+
+**Getting the active photo**
+
+```sql
+SELECT * FROM photos
+JOIN users
+ON photos.user_id = users.id
+WHERE users.hash = ?
+AND photos.is_active = true
+```
+
