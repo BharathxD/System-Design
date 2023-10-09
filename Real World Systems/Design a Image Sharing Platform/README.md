@@ -164,3 +164,17 @@ WHERE id = (
 );
 ```
 
+### Let’s get going by creating an API Server
+
+---
+
+![Uploading a photo api.gravatar.com](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/api-server.png)
+
+Uploading a photo api.gravatar.com
+
+**Prepare for upload**
+
+- User requests photo upload service for a new upload
+- Photo upload service generates a random id
+- Photo upload service generates signed URL for `S3://gravatar/{user_id}/{random_photo_id}`
+- Photo upload service sends signed URL to user
