@@ -159,7 +159,8 @@ UPDATE user SET active_photo_id = ? WHERE id = ?
 --- To get the active photo
 SELECT * FROM photos
 WHERE id = (
-	SELECT active_photo_id
-	FROM users WHERE id = ?
-));
+  SELECT active_photo_id
+  FROM users WHERE id = ?
+);
 ```
+
