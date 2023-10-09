@@ -142,3 +142,11 @@ WHERE users.hash = ?
 AND photos.is_active = true
 ```
 
+**How can we make the above query much better? (As this query is frequently used)**
+
+Add a column named `active_photo_id`
+
+| Users           |
+| --------------- |
+| ….              |
+| active_photo_id |
