@@ -150,3 +150,16 @@ Add a column named `active_photo_id`
 | --------------- |
 | ….              |
 | active_photo_id |
+
+**But then we need to update the other queries?** `YES`
+
+```sql
+--- To set the active photo
+UPDATE user SET active_photo_id = ? WHERE id = ?
+--- To get the active photo
+SELECT * FROM photos
+WHERE id = (
+	SELECT active_photo_id
+	FROM users WHERE id = ?
+));
+```
