@@ -208,11 +208,13 @@ To render the active photo for a user, follow these steps:
   S3://gravatar-images/{user-id}/{photo_id}
   ```
 
-- Return the response
+- Render the Active Photo
 
-```sql
-<img src="https://api.gravatar.com/photos/Ti09j98j"/>
-```
+  Now that you have the image file, you can render it in your HTML or Markdown content using the following <img> tag:
+
+  ```html
+  <img src="https://api.gravatar.com/photos/{hash}" alt="Active Photo" />
+  ```
 
 ## Using a CDN to Serve Content
 
