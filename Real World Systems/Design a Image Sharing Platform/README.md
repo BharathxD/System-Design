@@ -205,3 +205,8 @@ AND is_active = true;
 ```sql
 <img src="https://api.gravatar.com/photos/Ti09j98j"/>
 ```
+
+### Let’s use CDN to serve it
+
+1. Configure a CDN with `gravatar.com` which points to our actual api server `api.gravatar.com/photos`
+2. `https://gravatar.com/hash` — Cache Miss? → `https://api.gravatar.com/photos/hash`
