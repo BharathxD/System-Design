@@ -200,8 +200,13 @@ To render the active photo for a user, follow these steps:
    WHERE is_active = true;
    ```
 
-- Read the file from S3
-  `S3://gravatar-images/{user-id}/{photo_id}`
+- Retrieve the Photo File
+
+  Once you have the active photo's ID, you can fetch the actual photo file from an S3 bucket. Use the following S3 path to access the image:
+
+  ```txt
+  S3://gravatar-images/{user-id}/{photo_id}
+  ```
 
 - Return the response
 
