@@ -199,3 +199,9 @@ AND is_active = true;
 
 - Read the file from S3
   `S3://gravatar-images/{user-id}/{photo_id}`
+
+- Return the response
+
+```sql
+<img src="https://api.gravatar.com/photos/Ti09j98j"/>
+```
