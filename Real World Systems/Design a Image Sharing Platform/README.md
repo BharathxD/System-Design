@@ -182,3 +182,17 @@ Uploading a photo api.gravatar.com
 **Upload Photo**
 
 User uploads photo to S3 using pre-signed urls (Learn in-depth about it [here](https://github.com/BharathxD/System-Design/tree/master/Real%20World%20Systems/Design%20a%20Social%20Media%20Network))
+
+**Render the active photo**
+
+`https://api.gravatar.com/photos/{hash}`
+
+- Get hash from the URL
+- Get active photo id from the database
+
+```sql
+SELECT * FROM phtos
+JOIN users
+WHERE users.hash = {hash}
+AND is_active = true;
+```
