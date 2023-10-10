@@ -185,17 +185,20 @@ User uploads photo to S3 using pre-signed urls (Learn in-depth about it [here](h
 
 **Render the active photo**
 
-`https://api.gravatar.com/photos/{hash}`
+To render the active photo for a user, follow these steps:
 
-- Get hash from the URL
-- Get active photo id from the database
+1. **Retrieve the Photo Information**
 
-```sql
-SELECT * FROM phtos
-JOIN users
-WHERE users.hash = {hash}
-AND is_active = true;
-```
+   First, you need to obtain the necessary information for rendering the active photo. Here's how to do it:
+
+   - Get the `{hash}` from the URL.
+   - Retrieve the active photo's ID from the database using SQL:
+
+   ```sql
+   SELECT * FROM photos
+   JOIN users ON users.hash = {hash}
+   WHERE is_active = true;
+   ```
 
 - Read the file from S3
   `S3://gravatar-images/{user-id}/{photo_id}`
