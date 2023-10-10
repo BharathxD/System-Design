@@ -178,3 +178,7 @@ Uploading a photo api.gravatar.com
 - Photo upload service generates a random id
 - Photo upload service generates signed URL for `S3://gravatar/{user_id}/{random_photo_id}`
 - Photo upload service sends signed URL to user
+
+**Upload Photo**
+
+User uploads photo to S3 using pre-signed urls (Learn in-depth about it [here](https://github.com/BharathxD/System-Design/tree/master/Real%20World%20Systems/Design%20a%20Social%20Media%20Network))
