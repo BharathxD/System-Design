@@ -210,3 +210,9 @@ AND is_active = true;
 
 1. Configure a CDN with `gravatar.com` which points to our actual api server `api.gravatar.com/photos`
 2. `https://gravatar.com/hash` — Cache Miss? → `https://api.gravatar.com/photos/hash`
+
+### Overall architecture for Gravatar
+
+---
+
+![overall_arch.png](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/overall_arch.png)
