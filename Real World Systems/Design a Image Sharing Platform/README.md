@@ -196,3 +196,6 @@ JOIN users
 WHERE users.hash = {hash}
 AND is_active = true;
 ```
+
+- Read the file from S3
+  `S3://gravatar-images/{user-id}/{photo_id}`
