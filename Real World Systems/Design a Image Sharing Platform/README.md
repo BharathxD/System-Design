@@ -206,10 +206,21 @@ AND is_active = true;
 <img src="https://api.gravatar.com/photos/Ti09j98j"/>
 ```
 
-### Let’s use CDN to serve it
+## Using a CDN to Serve Content
 
-1. Configure a CDN with `gravatar.com` which points to our actual api server `api.gravatar.com/photos`
-2. `https://gravatar.com/hash` — Cache Miss? → `https://api.gravatar.com/photos/hash`
+When it comes to serving content efficiently, Content Delivery Networks (CDNs) can play a crucial role. In this example, we'll configure a CDN for `gravatar.com` to optimize the delivery of images from our API server at `api.gravatar.com/photos`.
+
+**_Step 1: Configure the CDN_**
+
+To set up the CDN, follow these steps:
+
+1. Configure a CDN with the origin `gravatar.com`, which will point to our actual API server at `api.gravatar.com/photos`.
+
+**_Step 2: Handling Cache Miss_**
+
+In some cases, the CDN may experience a cache miss, meaning it doesn't have the requested content in its cache. In such situations, you can redirect the request to the API server to retrieve the content dynamically. Here's how:
+
+2. When a cache miss occurs, redirect the request from `https://gravatar.com/hash` to `https://api.gravatar.com/photos/hash`.
 
 ### Overall architecture for Gravatar
 
