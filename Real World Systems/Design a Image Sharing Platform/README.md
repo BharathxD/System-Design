@@ -256,3 +256,13 @@ In some cases, the CDN may experience a cache miss, meaning it doesn't have the 
 location = $(320.720, 120/720)$
 
 This allows us to handle multiple on-demand transformations, it is really necessary to store relative position of the bounding box (or) co-ordinates, as the size of the picture may differ on different devices (It will be a efficient so long as the aspect ratio of the image doesn’t change)
+
+Bounding Box = $LTRB/x,y,w,h$
+
+$L$ = Left
+
+$T$ = Top
+
+$R$ = Right
+
+$L$ = Bottom
