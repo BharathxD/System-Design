@@ -248,3 +248,9 @@ In some cases, the CDN may experience a cache miss, meaning it doesn't have the 
 - Self-removal
 - Face-recognition & suggestion (SLA)
 - Profile Activity (DB)
+
+### Relative Positioning
+
+---
+
+location = $(320.720, 120/720)$
