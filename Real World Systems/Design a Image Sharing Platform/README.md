@@ -13,7 +13,7 @@
 
 ---
 
-![Demonstration of URL parts](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/url.png)
+![Demonstration of URL parts](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Image+Sharing+Platform/url.png)
 
 Once the request hits the server
 
@@ -21,7 +21,7 @@ Once the request hits the server
 - Reads the file from the server at the path (Reads the file from S3)
 - Sends the response
 
-![Image tag with url](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/img-tag.png)
+![Image tag with url](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Image+Sharing+Platform/img-tag.png)
 
 ```tsx
 app.get("/raw/:path", async (req: Request, res: Response) => {
@@ -168,7 +168,7 @@ WHERE id = (
 
 ---
 
-![Uploading a photo api.gravatar.com](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/api-server.png)
+![Uploading a photo api.gravatar.com](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Image+Sharing+Platform/api-server.png)
 
 Uploading a photo api.gravatar.com
 
@@ -236,7 +236,7 @@ In some cases, the CDN may experience a cache miss, meaning it doesn't have the 
 
 ---
 
-![overall_arch.png](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/overall_arch.png)
+![overall_arch.png](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Image+Sharing+Platform/overall_arch.png)
 
 ## Tag in photos
 
@@ -267,4 +267,4 @@ $R$ = Right
 
 $L$ = Bottom
 
-![Demonstration for the bounding box](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/bounding_box.png)
+![Demonstration for the bounding box](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design+a+Image+Sharing+Platform/bounding_box.png)
