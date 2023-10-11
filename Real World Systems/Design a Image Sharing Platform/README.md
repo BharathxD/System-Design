@@ -237,3 +237,14 @@ In some cases, the CDN may experience a cache miss, meaning it doesn't have the 
 ---
 
 ![overall_arch.png](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/overall_arch.png)
+
+## Tag in photos
+
+### Brainstorm
+
+- Who can tag (Authorization)
+- Maximum limit of people tag in a photo
+- Notification & Throttling
+- Self-removal
+- Face-recognition & suggestion (SLA)
+- Profile Activity (DB)
