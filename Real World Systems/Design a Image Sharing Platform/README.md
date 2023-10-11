@@ -266,3 +266,5 @@ $T$ = Top
 $R$ = Right
 
 $L$ = Bottom
+
+![Demonstration for the bounding box](https://bharath-lakshman-kumar.s3.ap-south-1.amazonaws.com/Design%20a%20Image%20Sharing%20Platform/bounding_box.png)
