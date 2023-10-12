@@ -1,9 +1,9 @@
 # Load Balancing Algorithms
 
-**Round Robin**: Distribute the load `Iteratively`
+**Round Robin**: Distributes the load iteratively.
 
-**Weighted Round Robin**: Distribute the load iteratively but as per `weights`
+**Weighted Round Robin**: Distributes the load iteratively based on weights.
 
-**Least Connections**: Pick the server having the `least connections` from the load balancer
+**Least Connections**: Selects the server with the fewest connections from the load balancer.
 
-**Hash Based Routing**: (`Random`) Hash of some attribute (ip, userId, url) determines which server to pick (You can configure `stickiness`)
+**Hash-Based Routing**: Uses a hash of some attribute (IP, userId, URL) to determine which server to pick. You can configure stickiness for this.
