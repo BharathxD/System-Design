@@ -1,5 +1,7 @@
 # Design a private image-sharing platform
 
+In this design system, we will explore the intricacies of a private image-sharing platform. We'll cover various important aspects, such as how images are delivered on the platform, incorporating Gravatar, improving query performance, setting up an API server, utilizing a content delivery network, and adding tags to photos. The design system also sheds light on the platform's database structure, placing emphasis on security considerations and the overall system architecture.
+
 ### Agenda
 
 ---
