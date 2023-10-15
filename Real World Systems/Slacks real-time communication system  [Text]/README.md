@@ -39,13 +39,13 @@
 | muted        |
 | read_till    |
 
-| Channels       |     |
-| -------------- | --- |
-| id             |     |
-| user_id        |     |
-| org            |     |
-| name           |     |
-| type: group_id |     |
+| Channels       |
+| -------------- |
+| id             |
+| user_id        |
+| org            |
+| name           |
+| type: group_id |
 
 | Messages   |
 | ---------- |
