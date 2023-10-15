@@ -63,7 +63,7 @@
 
 ---
 
-Every user will have 1 WebSocket connection open with our backend infrastructure and that will be used for anything and everything that happens `real-time`
+Each user will maintain a single WebSocket connection with our backend infrastructure, which will handle all `real-time` interactions.
 
 **Edge Servers**
 
