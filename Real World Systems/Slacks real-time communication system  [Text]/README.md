@@ -72,8 +72,7 @@ Because WebSocket are `expensive` and browsers have a **6 Concurrent TCP** conne
 Hence, we need a fleet of servers (Edge Servers) to whom our end users connect over WebSocket [WS]
 
 <aside>
-💡 Any service chat, notification, etc wants to talk to users in realtime the info will go through theses edge servers
-Don’t create multiple WebSocket connection, it could slow down the system
+💡 If any service, such as chat or notifications, needs to engage with users in real-time, the data will be routed through these edge servers. Avoid creating multiple WebSocket connections, as this could potentially slow down the system.
 
 </aside>
 
