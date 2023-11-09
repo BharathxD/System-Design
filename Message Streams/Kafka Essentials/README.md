@@ -1,11 +1,5 @@
 # Kafka Essentials
 
-## Introduction
-
-Welcome to the Kafka Essentials repository! This README provides an overview of essential concepts related to Kafka, a powerful message streaming platform. Whether you're new to Kafka or looking to refresh your understanding, this guide will help you grasp the key components and limitations of Kafka.
-
-## Kafka Basics
-
 Kafka is designed to handle message streams efficiently. Here are some fundamental concepts to get you started:
 
 - **Message Streams**: Kafka serves as a message stream, providing a robust infrastructure for handling messages.
